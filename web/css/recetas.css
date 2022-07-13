@@ -1,0 +1,39 @@
+.tituloRecetas {
+    /*En los html de cada receta*/
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.main_recetas {
+    /*En los html de cada receta*/
+    text-align: center;
+}
+
+.h2_recetas {
+    /*En los html de cada receta*/
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    margin: 0px auto;
+    border-radius: 10px;
+}
+
+.tabla_ingredientes {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.listado_pasos {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.li_paso {
+    text-align: left;
+}

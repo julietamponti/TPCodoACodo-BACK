@@ -1,0 +1,126 @@
+header {
+    background-color: #9D5353;
+    text-align: left;
+}
+
+nav {
+    display: flex;
+    background-color: #632626;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav a {
+    padding: 14px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    display: flex;
+    background-color: #632626;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+body {
+    background-color: rgb(249, 230, 212);
+}
+
+#footText {
+    text-align: center;
+    color: white;
+}
+
+.receta {
+    width: 30%;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.flex-container {
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid pink;
+    background: rgb(249, 230, 212);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-between;
+    gap: 20px;
+}
+
+.titulo_ppal {
+    /*html todos --> recetario de alicia*/
+    text-align: center;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
+}
+
+a:hover {
+    /*html todos en la barra de navevacion*/
+    color: #BF8B67;
+    font-size: 18px;
+}
+
+.contenido-receta,
+.link-receta {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+}
+
+.textos {
+    color: #632626;
+    font-family: Verdana;
+}
+
+.h2index {
+    width: 100%;
+    background-color: #BF8B67;
+    padding: 10px;
+    border-radius: 5px;
+    color: #632626;
+}
+
+@media screen and (max-width: 1024) {
+    .receta {
+        width: 30%
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .flex-container {
+        gap: 25px;
+    }
+    .receta {
+        width: 40%;
+    }
+    .contenido-receta,
+    .link-receta {
+        border-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    nav,
+    .flex-container {
+        flex-direction: column;
+    }
+    .contenido-receta,
+    .link-receta {
+        border-radius: 20px;
+    }
+    .receta {
+        width: 100%;
+    }
+}
