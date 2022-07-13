@@ -23,8 +23,6 @@ function guardarReceta() {
         .then(function () {
             console.log("creado")
             alert("Grabado")
-  
-            // Handle response we get from the API
         })
         .catch(err => {
             //this.errored = true
@@ -84,9 +82,9 @@ if (document.getElementById("app")) {
                 fetch(url)
                     .then(response => response.json())
                     .then(data => {
-                        this.receta= data;
+                        this.recetas = data;
                         this.loading = false;
-                        console.log(this.receta);
+                        console.log(this.recetas);
                     })
                     .catch(err => {
                         this.errored = true
