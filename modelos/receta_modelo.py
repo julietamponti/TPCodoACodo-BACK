@@ -21,4 +21,4 @@ class RecetaSchema(ma.Schema):
         fields=('id','nombre', 'ingredientes','pasos','foto')
  
 receta_schema=RecetaSchema()            # para crear un receta
-receta_schema=RecetaSchema(many=True)  # multiples registros
+recetas_schema=RecetaSchema(many=True)  # multiples registros

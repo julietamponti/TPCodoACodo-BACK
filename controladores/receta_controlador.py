@@ -6,7 +6,7 @@ from modelos.receta_modelo import *
 @app.route('/recetas',methods=['GET'])
 def get_recetas():
     all_recetas=Receta.query.all()   # es una lista
-    result=receta_schema.dump(all_recetas)
+    result=recetas_schema.dump(all_recetas)
     return jsonify(result)
  
 @app.route('/recetas/<id>',methods=['GET'])
