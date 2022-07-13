@@ -42,14 +42,14 @@
                     <br>
                     <a href="receta_create.html" class="btn btn-success">Cargar nueva receta</a>
                     <br><br>
-                    <ul v-for="receta in recetas">  
+                    <section v-for="receta in recetas">  
                         <div class="receta">
                             <p class="textos">{{receta.nombre}}</p>
-                            <a class="link-receta" href="receta.html">
-                                <div class="contenido-receta" style="background-image: url({{receta.foto}})"></div>
+                            <a class="link-receta" :href="'receta.html?id='+receta.id">
+                                <div class="contenido-receta" v-bind:style="{'background-image': 'url(' + receta.foto + ')'}"></div>
                             </a>
                         </div>
-                    </ul> 
+                    </section> 
             </section>
         </div>
     </main>

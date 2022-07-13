@@ -47,7 +47,7 @@ function modificarReceta() {
   
   let url = "http://localhost:5000/recetas/"+id
   var options = {
-      body: JSON.stringify(producto),
+      body: JSON.stringify(receta),
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       //redirect: 'follow'

@@ -9,10 +9,11 @@ def get_recetas():
     result=receta_schema.dump(all_recetas)
     return jsonify(result)
  
-@app.route('/recetas/{id}',methods=['GET'])
+@app.route('/recetas/<id>',methods=['GET'])
 def get_receta(id):
     receta= Receta.query.get(id)
     return receta_schema.jsonify(receta)
+    
 
 @app.route('/recetas', methods=['POST']) # crea ruta o endpoint
 def create_receta():
@@ -41,6 +42,7 @@ def update_receta(id):
     receta.ingredientes=ingredientes
     receta.pasos = pasos
     receta.foto=foto
+       
     
     db.session.commit()
     return receta_schema.jsonify(receta)

@@ -8,7 +8,7 @@ class Receta(db.Model):  # defino la tabla
     foto=db.Column(db.String(255))
 
 
-    def __init__(self,nombre,ingredientes,foto, pasos):
+    def __init__(self,nombre,ingredientes,pasos,foto):
         self.nombre=nombre
         self.ingredientes=ingredientes
         self.pasos=pasos
@@ -20,5 +20,5 @@ class RecetaSchema(ma.Schema):
     class Meta:
         fields=('id','nombre', 'ingredientes','pasos','foto')
  
-receta_schema=RecetaSchema()            # para crear un producto
+receta_schema=RecetaSchema()            # para crear un receta
 receta_schema=RecetaSchema(many=True)  # multiples registros
