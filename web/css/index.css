@@ -83,7 +83,12 @@ a:hover {
     color: #632626;
     font-family: Verdana;
 }
-
+#altaReceta {
+    font-size: 28px;
+    color: #632626;
+    font-family: Verdana;
+    text-align: center;
+}
 .h2index {
     width: 100%;
     background-color: #BF8B67;
