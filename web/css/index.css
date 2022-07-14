@@ -89,7 +89,7 @@ a:hover {
     font-family: Verdana;
 }
 
-#altaReceta {
+.altaReceta {
     font-size: 28px;
     color: #632626;
     text-align: center;

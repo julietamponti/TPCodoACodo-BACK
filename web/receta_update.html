@@ -28,27 +28,29 @@
     </nav>
     <main style="margin: 1% 20%;">
         <div class="container">
-            <h1>Modificacion de la receta</h1>
+            <h1 class="altaReceta">Modificacion de la receta</h1>
             <form >
                 <div class="mb-3">
                     <label for="id">Id</label>
                             <input type="text" class="form-control" name="id" id="id" disabled><br>
                 </div>
                 <div class="mb-3">
-                    <label for="nombre">Nombre:</label>
+                    <label for="nombre">Nombre</label>
                     <input type="text" class="form-control" name="nombre" id="nombre"><br>
                 </div>
                 <div class="mb-3">
-                    <label for="foto">Foto:</label>
+                    <label for="foto">Foto</label>
                     <input type="text" class="form-control" name="foto" id="foto"><br>
                 </div>
                 <div class="mb-3">
-                    <label for="ingredientes">Ingredientes:</label>
-                    <input type="text" class="form-control" name="ingredientes" id="ingredientes"><br>
+                    <label for="ingredientes">Ingredientes</label>
+                    <textarea for= "ingredientes" name="ingredientes" id="ingredientes" cols="100" rows="10">Ingrese los ingredientes</textarea>
+                    <!-- <input type="text" class="form-control" name="ingredientes" id="ingredientes"><br> -->
                 </div>
                 <div class="mb-3">
-                    <label for="pasos">Pasos:</label>
-                    <input type="text" class="form-control" name="pasos" id="pasos"><br>
+                    <label for="pasos">Pasos</label>
+                    <textarea for= "pasos" name="pasos" id="pasos" cols="100" rows="10">Ingrese los pasos</textarea>
+                    <!-- <input type="text" class="form-control" name="pasos" id="pasos"><br> -->
                 </div>
                 
                 <button type="button" class="btn btn-success" onclick="modificar()">Grabar </button>
@@ -56,6 +58,11 @@
             <br>
         </div>
     </main>
+    <footer>
+        <br>
+        <p id="footText">Derechos reservados</p>
+        <br>
+    </footer>
     <script src="./js/update.js"></script>
 </body>
 </html>

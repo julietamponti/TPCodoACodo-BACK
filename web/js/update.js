@@ -9,8 +9,8 @@ var re = /%20/gi;
 document.getElementById("id").value = parts[0][1];
 document.getElementById("nombre").value = parts[1][1].replace(re," ");
 document.getElementById("foto").value = parts[2][1].replace(re," ");
-document.getElementById("ingredientes").value = parts[3][1];
-document.getElementById("pasos").value = parts[4][1];
+document.getElementById("ingredientes").value = parts[3][1].replace(re," ");
+document.getElementById("pasos").value = parts[4][1].replace(re," ");
  
 function modificar() {
     let id = document.getElementById("id").value;
