@@ -43,13 +43,15 @@
                 <div v-else>
                     <br><br>
                     <main class="main_recetas">
-                        <br>
-                        <h1 class="tituloRecetas">{{receta.nombre}}</h1>
-                        <img :src="receta.foto" :alt="'imagen:'+receta.nombre" width="100">   
-                        <h2 class="h2_recetas">Ingredientes</h2>
-                        <p>{{receta.ingredientes}}</p>
-                        <h2 class="h2_recetas">Procedimiento</h2>
-                        <p>{{receta.pasos}}</p>
+                        <div>
+                            <br>
+                            <h1 class="tituloRecetas">{{receta.nombre}}</h1>
+                            <img class="img_portada_receta"  :src="receta.foto" :alt="'imagen:'+receta.nombre" width="100">   
+                            <h2 class="h2_recetas">Ingredientes</h2>
+                            <p>{{receta.ingredientes}}</p>
+                            <h2 class="h2_recetas">Procedimiento</h2>
+                            <p>{{receta.pasos}}</p>
+                        </div>
                     </main>    
                     <a :href="'receta_update.html?id='+receta.id+'&nombre='+receta.nombre+'&foto='+receta.foto+'&ingredientes='+receta.ingredientes+'&pasos='+receta.pasos" class="btn btn-primary">Modificar</a>
                     <button v-on:click="eliminar(receta.id)" class="btn btn-danger">Eliminar</button>

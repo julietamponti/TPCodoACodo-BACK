@@ -38,18 +38,20 @@
                         <span class="sr-only"></span>
                     </div>
                 </div>
-                <div v-else>
+                <div v-else> 
                     <br>
                     <a href="receta_create.html" class="btn btn-success">Cargar nueva receta</a>
                     <br><br>
-                    <section v-for="receta in recetas">  
-                        <div class="receta">
-                            <p class="textos">{{receta.nombre}}</p>
-                            <a class="link-receta" :href="'receta.html?id='+receta.id">
-                                <div class="contenido-receta" v-bind:style="{'background-image': 'url(' + receta.foto + ')'}"></div>
-                            </a>
-                        </div>
-                    </section> 
+                    <div class="flex-container">
+                        <section v-for="receta in recetas">  
+                            <div class="receta">
+                                <p class="textos">{{receta.nombre}}</p>
+                                <a class="link-receta" :href="'receta.html?id='+receta.id">
+                                    <div class="contenido-receta" v-bind:style="{'background-image': 'url(' + receta.foto + ')'}"></div>
+                                </a>
+                            </div>
+                        </section> 
+                    </div> 
             </section>
         </div>
     </main>
