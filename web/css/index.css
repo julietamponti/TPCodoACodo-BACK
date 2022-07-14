@@ -88,10 +88,11 @@ a:hover {
     color: #632626;
     font-family: Verdana;
 }
+
 #altaReceta {
     font-size: 28px;
     color: #632626;
-    font-family: Verdana;
+    font-family: 'Amatic SC', cursive;
     text-align: center;
 }
 .h2index {

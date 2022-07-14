@@ -48,9 +48,9 @@ def update_receta(id):
     return receta_schema.jsonify(receta)
  
 
-# @app.route('/receta/<id>',methods=['DELETE'])
-# def delete_receta(id):
-#     receta=Receta.query.get(id)
-#     db.session.delete(receta)
-#     db.session.commit()
-#     return receta_schema.jsonify(receta)
+@app.route('/receta/<id>',methods=['DELETE'])
+def delete_receta(id):
+    receta=Receta.query.get(id)
+    db.session.delete(receta)
+    db.session.commit()
+    return receta_schema.jsonify(receta)

@@ -51,8 +51,12 @@
                         <h2 class="h2_recetas">Procedimiento</h2>
                         <p>{{receta.pasos}}</p>
                     </main>    
-            </section>
+                    <a :href="'receta_update.html?id='+receta.id+'&nombre='+receta.nombre+'&foto='+receta.foto+'&ingredientes='+receta.ingredientes+'&pasos='+receta.pasos" class="btn btn-primary">Modificar</a>
+                    <button v-on:click="eliminar(receta.id)" class="btn btn-danger">Eliminar</button>
+
+                </section>
         </div>
+
     </main>
     <footer id="idfooter">
     </footer>

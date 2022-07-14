@@ -27,7 +27,7 @@ if (document.getElementById("app")) {
                     })
             },
             eliminar(id) {
-                const url = 'http://127.0.0.1:5000/recetas/' + id;
+                const url = 'http://127.0.0.1:5000/receta/' + id;
                
                 var options = {
                     method: 'DELETE',
